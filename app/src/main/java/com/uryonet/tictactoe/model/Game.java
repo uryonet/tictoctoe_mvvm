@@ -62,7 +62,7 @@ public class Game {
 
     public boolean hasThreeSameDiagonalCells() {
         try {
-            areEqual(cells[0][0], cells[1][1], cells[2][2]) || areEqual(cells[0][2], cells[1][1], cells[2][0]);
+            return areEqual(cells[0][0], cells[1][1], cells[2][2]) || areEqual(cells[0][2], cells[1][1], cells[2][0]);
         } catch (NullPointerException e) {
             Log.e(TAG, e.getMessage());
             return false;
